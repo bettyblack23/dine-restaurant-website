@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Spartan", sans-serif;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: -0.0125em;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -1.25px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 25px;
+}
+
+a {
+  font-size: 14px;
+  letter-spacing: 0.14286em;
+  line-height: 28px;
+  text-decoration: none;
+  color: #4C4C4C;
+  /*&:hover{
+    opacity: 50%;
+  }*/
+}
+
+a.blck-button {
+  color: #FFFFFF;
+  background: #111111;
+  border: solid 1px #FFFFFF;
+}
+
+a.blck-button:hover {
+  color: #17192B;
+  background: #FFFFFF;
+  border: solid 1px #111111;
+}
+
+a.transp-button {
+  background: transparent;
+  border: solid 1px #ffffff;
+  color: #FFFFFF;
+}
+
+a.transp-button:hover {
+  color: #111111;
+  background: #FFFFFF;
+  border: solid 1px #FFFFFF;
+}
+
+.content {
+  padding: 0 6.4%;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.button {
+  padding: 6% 18%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.pattern-divide {
+  width: 71px;
+  display: block;
+  margin: 0 auto 32px auto;
+}
+
+.content-img {
+  width: 100%;
+  display: block;
+  -webkit-box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 0 48px 0;
+}
+
+.menu-img {
+  width: 100%;
+  display: block;
+  -webkit-box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 0 32px 0;
+}
+
+.hero {
+  color: white;
+  background: url(/starter-code/images/homepage/hero-bg-mobile.jpg) #111111;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 111vh;
+  min-height: 784px;
+}
+
+.hero .logo {
+  height: 32px;
+}
+
+.hero .button {
+  margin-top: 25px;
+}
+
+.hero .content {
+  padding-top: 0;
+}
+
+.about {
+  text-align: center;
+  bottom: 0px;
+  -webkit-transform: translateY(-6.2%);
+          transform: translateY(-6.2%);
+  margin-bottom: -4.4%;
+}
+
+.highlights {
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+  padding: 72px 0;
+}
+
+.highlights .dish-divide {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 24px;
+}
+
+.highlights h3 {
+  margin: 0 0 4px 0;
+}
+
+.highlights p {
+  margin-top: 0;
+}
+
+.gathering {
+  text-align: center;
+  padding: 80px 0 124px 0;
+}
+
+.gathering ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.gathering img {
+  -webkit-box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  margin: 0 0 48px 0;
+  display: block;
+}
+
+.gathering .gathering_desc {
+  margin: 24px 0 32px 0;
+}
+
+.gathering .gathering_desc h2 {
+  margin: 0 0 16px 0;
+}
+
+.booking {
+  color: #ffffff;
+  background-image: url(/starter-code/images/homepage/ready-bg-mobile.jpg);
+  text-align: center;
+  padding: 80px 0 80px 0;
+}
+
+.booking h2 {
+  margin: 0 0 24px 0;
+}
+
+.foot {
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 0 64px 0;
+  line-height: 28px;
+}
+
+.foot .logo {
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.foot address {
+  font-style: normal;
+  margin: 40px 0 32px 0;
+}
+
+.foot address a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
