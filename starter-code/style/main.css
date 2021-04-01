@@ -735,8 +735,8 @@ address a {
   text-align: center;
   /*bottom: 0px;*/
   /*margin-top: -55px;*/
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
   padding-bottom: 80px;
   margin-bottom: 15px;
 }
