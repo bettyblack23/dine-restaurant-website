@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+  }
+
+  * *:before *:after{
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0 auto;
+    width: 100%;
+    width: 100%;
+height: 100%;
+position: relative;
+  }
+
+  .tablet-side{
+    @include tablet-2{
+    margin-left: 58px;
+    margin-right: 58px;
+    }
+    @include desktop{
+      margin-left: 0px;
+      margin-right: 0px;
+      }
+
+  }
+
+  .main-content{
+    min-height: 100vh;
+overflow: hidden;
+display: block;
+position: relative;
+padding-bottom: 440px;
+  
+@include tablet-2{
+  padding-bottom:328px;
+
+}
+
+@include desktop{
+  padding-bottom: 240px;
+}
+  }
+
+  .container {
+    width: 87.2%;
+    margin: 0 auto;
+    @include tablet-2{
+      width: 89.715%
+    }
+    @include desktop{
+      width: 77.09%;
+
+    }
+    @include desktop-2{
+      width: 77.09%;
+    }
+
+    @include desktop-3{
+      width: 65%;
+    }
+
+    @include desktop-4{
+      width: 55%;
+    }
+
+    @include desktop-5{
+      width: 50%;
+    }
+    
+  }
+
+  
+
+  .content-desc{
+
+    @include tablet-2 {
+      max-width: 457px;
+      margin: 0 auto;
+    }
+
+    @include desktop {
+      margin: 0;
+      text-align: left;
+    }
+
+
+
+    
+  }

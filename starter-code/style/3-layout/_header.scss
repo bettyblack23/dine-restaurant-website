@@ -1,0 +1,94 @@
+.hero {
+    color: white;
+    background: url(/images/homepage/hero-bg-mobile.jpg) $CodGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    min-height: 748px;
+
+    @include heroImage;
+  
+    @include mobile {
+      background: url(../images/homepage/hero-bg-mobile@2x.jpg) $CodGray;
+      @include heroImage;
+    }
+  
+    @include tablet {
+      background: url(../images/homepage/hero-bg-tablet.jpg) $CodGray;
+      @include heroImage;
+    }
+  
+    @include tablet-2 {
+      background: url(../images/homepage/hero-bg-tablet@2x.jpg) $CodGray;
+      @include heroImage;
+      min-height: 992px;
+    }
+  
+    @include desktop {
+      background: url(../images/homepage/hero-bg-desktop.jpg) $CodGray;
+      @include heroImage;
+  
+      height: calc(100vh - 80px);
+      min-height: unset;
+      justify-content: flex-start;
+      text-align: left;
+      max-height: 820px;
+      min-height: 600px;
+    }
+  
+    @include desktop-2 {
+      background: url(../images/homepage/hero-bg-desktop@2x.jpg) $CodGray;
+      @include heroImage;
+    }
+
+    @include desktop-3 {
+      background: url(../images/homepage/hero-bg-desktop@2x.jpg) $CodGray;
+      @include heroImage;
+
+      max-height: 1000px;
+    }
+  
+    .logo {
+      height: 32px;
+      margin-top: 65px;
+  
+      @include tablet {
+        height: 40px;
+      }
+
+    }
+  
+    @include desktop{
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75.86%;
+      }
+    }
+    
+  
+    h1 {
+      margin: 32px 0 24px 0;
+    }
+  
+    p {
+      margin: 24px 0 32px 0;
+    }
+
+    .hero-desc {
+      @include tablet {
+        max-width: 573px;
+        margin: 0 auto;
+      }
+    
+      @include desktop {
+        max-width: 564px;
+        margin: 0;
+      }
+    }
+  }
+  

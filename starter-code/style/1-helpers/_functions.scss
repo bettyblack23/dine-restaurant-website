@@ -1,0 +1,4 @@
+@function adobeXdLtSpacing($amount){
+    $result:($amount/ 1000) * 1rem;
+    @return $result;
+}

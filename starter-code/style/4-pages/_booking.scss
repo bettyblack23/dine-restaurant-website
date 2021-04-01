@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+.booking-booker {
+  @include desktop {
+    background-image: url(../images/patterns/pattern-curve-bottom-right.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  .container {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.booker-form-container {
+  background-color: white;
+  padding: 32px;
+  max-width: 400px;
+  box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: -137px auto 80px;
+
+  @include tablet {
+    max-width: 540px;
+    padding: 48px;
+  }
+
+  @include tablet-2 {
+    margin: -230px auto 120px;
+  }
+
+  @include desktop {
+    margin: -342px 0 101px;
+    min-width: 540px;
+  }
+}
+
+.booking-form {
+  width: 100%;
+  @include desktop {
+    position: relative;
+  }
+}
+
+.booking-lines {
+  display: none;
+  @include desktop {
+    position: absolute;
+    transform: translate(-75%, 12%);
+    z-index: -1;
+    display: block;
+  }
+}
+
+input {
+  width: 100%;
+  caret-color: $Beaver;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  padding: 0 16px 24px 16px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+input[type="submit"] {
+  height: 64px;
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: adobeXdLtSpacing(142.86);
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.date-time-field {
+  width: 73px;
+  @include tablet {
+    width: 80px;
+  }
+}
+
+.form-section-1 {
+  margin-bottom: 10px;
+}
+
+.form-section-2 {
+  margin-bottom: 25px;
+}
+
+.form-section-3 {
+  margin-bottom: 32px;
+}
+
+.form-section-4 {
+  margin-bottom: 32px;
+  position: relative;
+  height: 44px;
+
+  .ince-decre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  input {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background: white;
+    color: #151515;
+  }
+
+  img {
+    height: min-content;
+    cursor: pointer;
+    padding: 1px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.date-time-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.date-time-container-2section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px 5px;
+
+  @include mobile {
+    justify-content: space-between;
+  }
+
+  @include tablet {
+    width: 280px;
+  }
+
+  @include tablet-2 {
+    width: 306px;
+  }
+}
+
+.select-box {
+  height: 45px;
+  width: 97px;
+  border-bottom: 1px solid #8e8e8e;
+}
+
+.options-container {
+  opacity: 0;
+  display: none;
+  margin-top: 8px;
+  height: 103px;
+  z-index: 100;
+  position: absolute;
+  width: 106px;
+  box-shadow: 0px 15px 25px 0px rgba(56, 66, 85, 0.25);
+  background: white;
+  transition: all 0.3s;
+  padding-right: 30px;
+padding-left: 15px;
+justify-content: flex-end;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: flex-end;
+}
+
+.active{
+  opacity: 1;
+display: flex;
+
+}
+
+.option {
+  display: block;
+  text-align: right;
+  color: black !important;
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+input[type="radio"]:checked + label::before {
+  content: url(../images/icons/icon-check.svg);
+  padding-right: 15px;
+}
+
+.selected {
+  padding: 0 16px 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: black !important;
+}
+
+.selected::after {
+  content: url(../images/icons/icon-arrow.svg);
+  display: inline-block;
+  transition: all (0.3s);
+}
+
+.selected.open::after{
+  transform: rotateX(180deg);
+    }
+
+.section-2-label {
+  margin-bottom: 10px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
+}
+
+.red-text {
+  visibility: hidden;
+  font-size: 0.625rem;
+  margin-top: 9px;
+  color: #b54949;
+  @include tablet {
+    display: block;
+  }
+}
+
+.error {
+  color: #b54949;
+  .red-text {
+    visibility: visible;
+  }
+}
+
+.error-underline {
+  input {
+    border-color: #b54949;
+    color: #b54949;
+  }
+}

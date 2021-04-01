@@ -1,0 +1,60 @@
+button {
+  height: 64px;
+  width: 245px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: adobeXdLtSpacing(142.86);
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+
+  }
+  
+  .blck-button {
+    color:white;
+    background: $CodGray;
+    border: solid 1px white;
+    line-height: 16px;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0 10px;
+  
+    &:hover {
+      color:$Mirage;
+      background:white;
+      border: solid 1px $CodGray;
+      line-height: 16px;
+    }
+
+    &:active {
+      color:$Mirage;
+      background:white;
+      border: solid 1px $CodGray;
+      line-height: 16px;
+    }
+  }
+  
+  .transp-button {
+    background: transparent;
+    border: solid 1px white;
+    color:white;
+    line-height: 16px;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0 10px;
+  
+    &:hover {
+      color: $CodGray;
+      background:white;
+      border: solid 1px white;
+      line-height: 16px;
+    }
+
+    &:active {
+      color: $CodGray;
+      background:white;
+      border: solid 1px white;
+      line-height: 16px;
+    }
+  }

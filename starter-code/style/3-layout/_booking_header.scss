@@ -1,0 +1,99 @@
+.booking-hero {
+  color: white;
+  background: url(../images/booking/hero-bg-mobile.jpg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 600px;
+  @include heroImage;
+  background-size: cover;
+
+  @include mobile {
+    background: url(../images/booking/hero-bg-mobile@2x.jpg);
+    background-size: cover;
+  }
+
+  @include tablet {
+    background: url(../images/booking/hero-bg-tablet.jpg);
+    background-size: cover;
+  }
+
+  @include tablet-2 {
+    background: url(../images/booking/hero-bg-tablet@2x.jpg);
+    background-size: cover;
+
+    button {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    background: url(../images/booking/hero-bg-desktop.jpg);
+    justify-content: flex-start;
+    text-align: left;
+    background-size: cover;
+  }
+
+  @include desktop-2 {
+    background: url(../images/booking/hero-bg-desktop@2x.jpg);
+    background-size: cover;
+
+    height: calc(100vh - 300px);
+    min-height: 600px;
+    max-height: 800px;
+  }
+
+  .logo {
+    height: 32px;
+    margin-top: 56px;
+
+    @include tablet-2 {
+      height: 40px;
+      align-self: flex-start;
+    }
+
+    @include desktop {
+      margin-top: 65px;
+    }
+  }
+
+  .hero-desc {
+    max-width: 564px;
+    margin-top: 40px;
+
+    h1 {
+      margin-top: 0;
+    }
+
+    @include tablet-2 {
+      margin-top: 64px;
+    }
+
+    @include desktop {
+      margin-top: unset;
+      max-width: 380px;
+    }
+
+
+    @include desktop-2 {
+      margin-top: unset;
+      max-width: 445px;
+    }
+    
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include desktop{
+      align-items: flex-start;
+      height: 85%;
+    }
+  }
+
+}

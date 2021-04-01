@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap");
+
+*{
+    font-family: "Spartan", sans-serif;
+    font-size: 16px;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    letter-spacing: adobeXdLtSpacing(-12.5);
+  
+    @include tablet {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    @include desktop-2 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: adobeXdLtSpacing(-12.5);
+    margin: 0 0 16px 0;
+  
+    @include tablet {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.124rem;
+    line-height: 1.75rem;
+    letter-spacing: adobeXdLtSpacing(-12.5);
+    margin: 0 0 4px 0;
+    
+  
+    @include tablet {
+      font-size: 1.124rem;
+    }
+  }
+  
+  p {
+    font-size: 0.938rem;
+    font-weight: 400;
+    letter-spacing: adobeXdLtSpacing(-12.5);;
+    line-height: 1.563rem;
+    letter-spacing: adobeXdLtSpacing(-12.5);;
+  
+    @include tablet {
+      font-size: 1.124rem;
+      line-height: 1.875rem;
+    }
+
+    @include desktop {
+      font-size: 1.124rem;
+      line-height: 1.875rem;
+    }
+  }
+  
+
+  #family_link, #special_link, #social_link{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: adobeXdLtSpacing(142.86);
+    line-height: 1.75rem;
+    text-decoration: none;
+    color: #4c4c4c;
+    opacity: 0.5;
+    text-transform: uppercase;
+
+    &:hover{
+      color: #4c4c4c;
+      opacity: 1;
+    }
+
+    &:active{
+      color: #4c4c4c;
+      opacity: 1;
+    }
+  }

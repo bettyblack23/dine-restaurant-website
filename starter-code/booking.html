@@ -6,33 +6,128 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="./style/main.css" />
   <title>Frontend Mentor | Dine Website Challenge</title>
 </head>
 <body>
+  <div class="main-content">
+    <header class="booking-hero wrapper">
+      <div class="container">
 
-  Reservations
-
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
-
-
-
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
+         <a class="logo" href="index.html"><img src="./images/logo.svg" alt="logo_image" /></a> 
 
 
+        <div class="hero-desc">
+          <h1>
+            Reservations
+          </h1>
+          <p>
+              We can’t wait to host you. If you have any special requirements please feel free to 
+              call on the phone number below. We’ll be happy to accommodate you.
+          </p>
+          <button class="transp-button">Reserve place</button>
+        </div>
+      </div>
+    </header>
 
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
+    <div class="booking-booker ">
+      <div class="container">
+        <div class="booker-form-container ">
+          <form id="booking_form">
+            <div class="form-section-1 form-valid">
+              <input type="text" id="full_name" autocomplete="off" name="full_name" placeholder="Name" maxlength="30">
+              <div >
+                <label class="red-text">VALUE</label>
+              </div>
+            </div>
+            <div class="form-section-2 form-valid">
+              <input type="text" id="email_address" name="email" placeholder="Email">
+              <div >
+                <label class="red-text">VALUE</label>
+              </div>
+            </div>
+            <div class="form-section-3 date-time-container form-date">
+              <div class="section-2-label"> 
+                <label>Pick a date</label>
+                <label class="red-text">VALUE</label>
+              </div>
+              <div class="date-time-container-2section">
+                <input type="text" id="month" class="date-time-field" autocomplete="off" name="month" placeholder="MM" maxlength="2">
+                <input type="text" id="day" class="date-time-field" autocomplete="off" name="day" placeholder="DD" maxlength="2">
+                <input type="text" id="year" class="date-time-field" autocomplete="off" name="year" placeholder="YYYY" maxlength="4">
+              </div>
 
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
+            </div>
+            <div class="form-section-3 date-time-container form-time">
+              <div class="section-2-label">
+                <label>Pick a time</label>
+                
+                <label class="red-text">VALUE</label>
+              </div>
+              <div class="date-time-container-2section">
+                <input type="text" id="hour" class="date-time-field" autocomplete="off" name="hour" placeholder="09" maxlength="2">
+                <input type="text" id="minute" class="date-time-field" autocomplete="off" name="minute" placeholder="00" maxlength="2">
+  
+                <div class="select-box" id="select">
+                  <div class="selected rotate" id="selected">
+                  AM
+                  </div>
 
+                  <div class="options-container" id="options_list">
+                    <div class="option">
+                      <input id="am" type="radio" value="AM" name="daytime" checked>
+                      <label for="am">AM</label>
+                    </div>
+                    <div class="option">
+                      <input id="pm" type="radio" value="PM" name="daytime">
+                      <label for="pm">PM</label>
+                    </div>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+            <div class="form-section-4 form-valid">
+              <input id="people" name="people" type="text" value="1 people" disabled=disabled>
+              <div class="ince-decre-container">
+                <img id="minus-button" role="button" src="./images/icons/icon-minus.svg" alt="minus-img">
+                <img id="plus-button" role="button" src="./images/icons/icon-plus.svg" alt="plus-img">
+              </div>
+            </div>
+            <input class="blck-button" type="submit" value="Make Reservation">
+          </form>
+
+          <div class="booking-lines">
+            <img src="./images/patterns/pattern-lines.svg" alt="pattern-lines">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<footer class="foot wrapper">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="./images/logo.svg" alt="logo_image" /></a> 
+    <div class="foot-desc">
+      <address>
+        Marthwaite, Sedbergh <br />
+        Cumbria<br />
+        <a href="tel:+00-44-123-4567">+00 44 123 4567</a>
+      </address>
+
+      <dl class="open-times">
+        <dt>Open Times</dt>
+        <dd>Mon - Fri: <time>09:00</time> AM - <time>10:00</time>PM</dd>
+        <dd>Sat - Sun: <time> 09:00</time>AM - <time>11:30</time> PM</dd>
+      </dl>
+    </div>
+  </div>
+</footer>
+  </div>
+
+
+    
+
+  <script src="./script/form-validation.js"></script>
 </body>
 </html>
