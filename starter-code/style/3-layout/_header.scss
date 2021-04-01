@@ -70,25 +70,32 @@
       }
     }
     
-  
-    h1 {
-      margin: 32px 0 24px 0;
-    }
-  
-    p {
-      margin: 24px 0 32px 0;
-    }
 
     .hero-desc {
+      p {
+        margin: 24px 0 32px 0;
+      }
+
+      h1 {
+        margin: 32px 0 24px 0;
+      }
+
       @include tablet {
         max-width: 573px;
         margin: 0 auto;
       }
     
       @include desktop {
-        max-width: 564px;
+        max-width: 523px;
         margin: 0;
+        margin-top: 121px;
+        
+        p{
+          max-width: 445px;
+        }
       }
+
+
     }
   }
   
