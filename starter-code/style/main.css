@@ -734,9 +734,11 @@ address a {
 .about {
   text-align: center;
   /*bottom: 0px;*/
-  margin-top: -55px;
+  /*margin-top: -55px;*/
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
   padding-bottom: 80px;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -760,7 +762,7 @@ address a {
     background-position-x: left, right;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: -55px;
+    /*margin-bottom: -55px;*/
   }
 }
 

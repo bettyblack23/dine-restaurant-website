@@ -25,9 +25,10 @@
 .about {
   text-align: center;
   /*bottom: 0px;*/
-  margin-top: -55px;
+  /*margin-top: -55px;*/
+  transform: translateY(-70px);
   padding-bottom: 80px;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
 
   @include tablet {
     padding-bottom: 105px;
@@ -46,7 +47,7 @@
     background-position-x: left, right;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: -55px;
+    /*margin-bottom: -55px;*/
   }
 }
 
