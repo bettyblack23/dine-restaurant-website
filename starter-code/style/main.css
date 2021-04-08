@@ -634,8 +634,8 @@ address a {
     background: url(../images/booking/hero-bg-desktop@2x.jpg);
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
-    max-height: 820px;
+    min-height: 700px;
+    max-height: 800px;
   }
 }
 
@@ -937,6 +937,7 @@ address a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    gap: 0 125px;
   }
 }
 
