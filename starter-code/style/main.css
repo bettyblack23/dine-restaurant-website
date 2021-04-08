@@ -992,7 +992,7 @@ address a {
 
 @media (min-width: 576px) {
   .menu-img {
-    min-width: 128px;
+    width: 128px;
     position: relative;
   }
 }

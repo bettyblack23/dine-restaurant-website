@@ -213,7 +213,7 @@
   @include imageDropShadow;
 
   @include tablet {
-    min-width: 128px;
+    width: 128px;
     position: relative;
   }
 }
