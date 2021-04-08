@@ -956,7 +956,7 @@ address a {
 
 @media (min-width: 1200px) and (orientation: landscape) {
   .dishes {
-    margin-top: 59px;
+    padding: 59px;
   }
 }
 
