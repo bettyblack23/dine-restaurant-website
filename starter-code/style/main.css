@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap");
 * {
   font-family: "Spartan", sans-serif;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 h1 {
@@ -738,11 +738,8 @@ address a {
 .about {
   text-align: center;
   /*bottom: 0px;*/
-  /*margin-top: -55px;*/
-  -webkit-transform: translateY(-70px);
-          transform: translateY(-70px);
   padding-bottom: 80px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
 }
 
 @media (min-width: 576px) {
@@ -762,7 +759,7 @@ address a {
 
 @media (min-width: 1200px) and (orientation: landscape) {
   .about {
-    background-position-y: 23%, 95.5%;
+    background-position-y: 23%, bottom;
     background-position-x: left, right;
     text-align: left;
     padding-bottom: 0;
@@ -776,7 +773,7 @@ address a {
 
 @media (min-width: 576px) {
   .about-divide {
-    margin-bottom: 120px;
+    margin-bottom: -20px;
   }
 }
 
@@ -807,12 +804,23 @@ address a {
       flex-basis: 48.7%;
 }
 
+.enjoyable-1 {
+  -webkit-transform: translatey(-70px);
+          transform: translatey(-70px);
+}
+
+.enjoyable-2 {
+  -webkit-transform: translatey(70px);
+          transform: translatey(70px);
+}
+
 .about-top {
   position: relative;
 }
 
 .about-top .pattern-lines {
   display: none;
+  z-index: 3;
 }
 
 @media (min-width: 768px) {
@@ -853,6 +861,16 @@ address a {
     -ms-grid-row: 1;
         grid-row-start: 1;
   }
+}
+
+.about-1 {
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+}
+
+.about-2 {
+  -webkit-transform: translateY(45px);
+          transform: translateY(45px);
 }
 
 .reverse-flex {
@@ -1191,7 +1209,7 @@ address a {
   display: none;
 }
 
-.active {
+.sw-active {
   display: block;
 }
 
@@ -1603,18 +1621,22 @@ input[type="radio"]:checked + label::before {
           justify-content: space-between;
   cursor: pointer;
   color: black !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .selected::after {
   content: url(../images/icons/icon-arrow.svg);
   display: inline-block;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .selected.open::after {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .section-2-label {

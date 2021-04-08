@@ -158,6 +158,6 @@ pm.addEventListener("click", function () {
   selected.classList.remove("open");
   toggleStatus = false;
 
-  selected.innerHTML = pm.value;
+  selected.innerHTML = am.value;
 });
 

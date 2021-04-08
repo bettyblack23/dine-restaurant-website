@@ -6,16 +6,16 @@ const social = document.querySelectorAll('.social-events');
 const justFamily = () => {
     family.forEach((element) => {
         element.classList.remove("non-active");
-        element.classList.add("active");
+        element.classList.add("sw-active");
     });
 
     special.forEach((element) => {
-        element.classList.remove("active");
+        element.classList.remove("sw-active");
         element.classList.add("non-active");
     });
 
     social.forEach((element) => {
-        element.classList.remove("active");
+        element.classList.remove("sw-active");
         element.classList.add("non-active");
     });
 
@@ -33,16 +33,16 @@ const justFamily = () => {
 const justSpecial = () => {
     special.forEach((element) => {
         element.classList.remove("non-active");
-        element.classList.add("active");
+        element.classList.add("sw-active");
     });
 
     family.forEach((element) => {
-        element.classList.remove("active");
+        element.classList.remove("sw-active");
         element.classList.add("non-active");
     });
 
     social.forEach((element) => {
-        element.classList.remove("active");
+        element.classList.remove("sw-active");
         element.classList.add("non-active");
     });
     
@@ -61,16 +61,16 @@ const justSpecial = () => {
 const justSocial = () => {
     social.forEach((element) => {
         element.classList.remove("non-active");
-        element.classList.add("active");
+        element.classList.add("sw-active");
     });
 
     family.forEach((element) => {
-        element.classList.remove("active");
+        element.classList.remove("sw-active");
         element.classList.add("non-active");
     });
 
     special.forEach((element) => {
-        element.classList.remove("active");
+        element.classList.remove("sw-active");
         element.classList.add("non-active");
     });
 

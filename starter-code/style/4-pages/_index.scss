@@ -25,10 +25,8 @@
 .about {
   text-align: center;
   /*bottom: 0px;*/
-  /*margin-top: -55px;*/
-  transform: translateY(-70px);
   padding-bottom: 80px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
 
   @include tablet {
     padding-bottom: 105px;
@@ -43,7 +41,7 @@
   }
 
   @include desktop {
-    background-position-y: 23%, 95.5%;
+    background-position-y: 23%, bottom;
     background-position-x: left, right;
     text-align: left;
     padding-bottom: 0;
@@ -54,7 +52,7 @@
 .about-divide {
   margin-bottom: 80px;
   @include tablet {
-    margin-bottom: 120px;
+    margin-bottom: -20px;
   }
 }
 
@@ -78,11 +76,20 @@
   flex-basis: 48.7%;
 }
 
+.enjoyable-1{
+  transform: translatey(-70px);
+}
+
+.enjoyable-2{
+  transform: translatey(70px);
+}
+
 .about-top {
   position: relative;
 
   .pattern-lines {
     display: none;
+    z-index: 3;
 
     @include tablet-2 {
       display: unset;
@@ -110,6 +117,14 @@
     grid-column-start: 2;
     grid-row-start: 1;
   }
+}
+
+.about-1{
+  transform: translateY(-35px);
+}
+
+.about-2{
+  transform: translateY(45px);
 }
 
 .reverse-flex {
@@ -368,7 +383,7 @@
   display: none;
 }
 
-.active {
+.sw-active {
   display: block;
 }
 
