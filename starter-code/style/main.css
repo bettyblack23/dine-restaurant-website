@@ -954,6 +954,12 @@ address a {
       flex-basis: 48.65%;
 }
 
+@media (min-width: 1200px) and (orientation: landscape) {
+  .dishes {
+    margin-top: 59px;
+  }
+}
+
 @media (min-width: 576px) {
   .dish {
     display: -webkit-box;
