@@ -77,6 +77,10 @@ p {
   }
 }
 
+.dishes p {
+  font-size: 0.9375rem;
+}
+
 #family_link, #special_link, #social_link {
   cursor: pointer;
   font-size: 0.875rem;
@@ -869,8 +873,8 @@ address a {
 }
 
 .about-2 {
-  -webkit-transform: translateY(45px);
-          transform: translateY(45px);
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
 }
 
 .reverse-flex {
@@ -981,7 +985,7 @@ address a {
 .menu-img {
   width: 100%;
   display: block;
-  margin: 0 0 32px 0;
+  margin: 0 0 24px 0;
   -webkit-box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 80px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

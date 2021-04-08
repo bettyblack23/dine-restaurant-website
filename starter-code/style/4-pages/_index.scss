@@ -124,7 +124,7 @@
 }
 
 .about-2{
-  transform: translatey(70px);
+  transform: translateY(70px);
 }
 
 .reverse-flex {
@@ -209,7 +209,7 @@
 .menu-img {
   width: 100%;
   display: block;
-  margin: 0 0 32px 0;
+  margin: 0 0 24px 0;
   @include imageDropShadow;
 
   @include tablet {
