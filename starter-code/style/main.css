@@ -873,8 +873,8 @@ address a {
 }
 
 .about-2 {
-  -webkit-transform: translateY(49px);
-          transform: translateY(49px);
+  -webkit-transform: translateY(56px);
+          transform: translateY(56px);
 }
 
 .reverse-flex {
