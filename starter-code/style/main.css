@@ -767,7 +767,6 @@ address a {
     background-position-x: left, right;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: -11px;
     /*margin-bottom: -55px;*/
   }
 }
@@ -911,6 +910,8 @@ address a {
   .highlights {
     padding-top: 200px;
     padding-bottom: 120px;
+    -webkit-transform: translatey(-11px);
+            transform: translatey(-11px);
   }
 }
 
