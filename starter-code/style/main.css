@@ -872,13 +872,13 @@ address a {
 }
 
 .about-1 {
-  -webkit-transform: translateY(-24px);
-          transform: translateY(-24px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .about-2 {
-  -webkit-transform: translateY(48px);
-          transform: translateY(48px);
+  -webkit-transform: translateY(47px);
+          transform: translateY(47px);
 }
 
 .reverse-flex {
