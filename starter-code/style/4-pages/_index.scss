@@ -28,6 +28,7 @@
   padding-bottom: 80px;
   /*margin-bottom: 15px;*/
 
+
   @include tablet {
     padding-bottom: 105px;
   }
@@ -46,6 +47,10 @@
     text-align: left;
     padding-bottom: 0;
     /*margin-bottom: -55px;*/
+  }
+
+  p{
+    padding: 0;
   }
 }
 

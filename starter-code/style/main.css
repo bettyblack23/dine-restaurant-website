@@ -771,6 +771,10 @@ address a {
   }
 }
 
+.about p {
+  padding: 0;
+}
+
 .about-divide {
   margin-bottom: 80px;
 }
