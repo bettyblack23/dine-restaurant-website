@@ -820,7 +820,6 @@ address a {
 .enjoyable-2 {
   -webkit-transform: translatey(70px);
           transform: translatey(70px);
-  z-index: 10;
 }
 
 .about-top {
@@ -913,6 +912,8 @@ address a {
     padding-bottom: 96px;
     -webkit-transform: translatey(-11px);
             transform: translatey(-11px);
+    z-index: -10;
+    position: relative;
   }
 }
 
