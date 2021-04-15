@@ -910,10 +910,7 @@ address a {
   .highlights {
     padding-top: 200px;
     padding-bottom: 96px;
-    -webkit-transform: translatey(-11px);
-            transform: translatey(-11px);
-    z-index: -10;
-    position: relative;
+    margin-top: -11px;
   }
 }
 
