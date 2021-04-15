@@ -820,6 +820,7 @@ address a {
 .enjoyable-2 {
   -webkit-transform: translatey(70px);
           transform: translatey(70px);
+  z-index: 10;
 }
 
 .about-top {
