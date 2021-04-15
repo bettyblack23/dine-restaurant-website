@@ -909,7 +909,7 @@ address a {
 @media (min-width: 1200px) and (orientation: landscape) {
   .highlights {
     padding-top: 200px;
-    padding-bottom: 120px;
+    padding-bottom: 96px;
     -webkit-transform: translatey(-11px);
             transform: translatey(-11px);
   }
