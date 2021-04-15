@@ -872,8 +872,8 @@ address a {
 }
 
 .about-1 {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
 }
 
 .about-2 {
